@@ -7,6 +7,9 @@ import { HeaderComponent } from './componentes/header/header.component';
 import { HomeComponent } from './componentes/home/home.component';
 import { LoginComponent } from './componentes/login/login.component';
 import { NavbarComponent } from './componentes/navbar/navbar.component';
+import { DashboardAdmComponent } from './componentes/dashboard-adm/dashboard-adm.component';
+import { CatalogoComponent } from './componentes/catalogo/catalogo.component';
+import { Logo3dComponent } from './componentes/logo3d/logo3d.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +17,10 @@ import { NavbarComponent } from './componentes/navbar/navbar.component';
     HeaderComponent,
     HomeComponent,
     LoginComponent,
-    NavbarComponent
+    NavbarComponent,
+    DashboardAdmComponent,
+    CatalogoComponent,
+    Logo3dComponent
   ],
   imports: [
     BrowserModule,

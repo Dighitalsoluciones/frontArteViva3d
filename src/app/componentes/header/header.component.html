@@ -1,16 +1,29 @@
-<app-navbar></app-navbar>
-    <header>
-	  <div class="overlay">
-	    <h1>
-	      <img class="logo"
-	        src="https://res.cloudinary.com/dazjkvk9d/image/upload/v1697659061/ARTE_VIVA_LOGO_MARCA_DE_AGUA_b15fp0.png"
-	        alt="Logo">
-	    </h1>
-	    <h3>Impresiones personalizadas en 3D</h3>
-	    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero nostrum quis, odio veniam itaque ullam debitis
-	      qui
-	      magnam consequatur ab. Vero nostrum quis, odio veniam itaque ullam debitis qui magnam consequatur ab.</p>
-	    <br>
-	    <button>READ MORE</button>
-	  </div>
-	</header>
+<header *ngIf="verHeader">
+  <div class="overlay">
+    <h1>
+      <img class="logo"
+        src="https://res.cloudinary.com/dazjkvk9d/image/upload/v1697659061/ARTE_VIVA_LOGO_MARCA_DE_AGUA_b15fp0.png"
+        alt="Logo">
+    </h1>
+    <h3>Impresiones personalizadas en 3D</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero nostrum quis, odio veniam itaque ullam debitis
+      qui
+      magnam consequatur ab. Veron nostrum quis, odio veniam itaque ullam debitis qui magnam consequatur ab.</p>
+    <br>
+    <div class="d-flex justify-content-center align-items-center">
+      <app-logo3d></app-logo3d>
+    </div>
+    <br>
+    <button class="button" (click)="mostrarCatalogo()">
+      Ver Productos
+      <svg fill="currentColor" viewBox="0 0 24 24" class="icon">
+        <path clip-rule="evenodd"
+          d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
+          fill-rule="evenodd"></path>
+      </svg>
+    </button>
+  </div>
+</header>
+<div *ngIf="verCatalogo">
+  <app-catalogo></app-catalogo>
+</div>
