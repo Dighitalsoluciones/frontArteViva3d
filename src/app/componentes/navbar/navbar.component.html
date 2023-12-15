@@ -9,8 +9,6 @@
       </div>
       <div class="col-lg-10 col-xl-8 col-sm-12 col-md-8 col-7">
         <div class="d-flex justify-content-end align-items-center">
-          <a target="_blank" href="#" data-abc="true" class="nav-link widget-header">
-            <i class="fa-brands fa-square-whatsapp fa-2xl" style="color: #0d7d1a; margin-right: 10px"></i></a>
           <span class="vl"></span>
           <div class="dropdown btn-group">
             <a class="nav-link nav-icons" style="margin-right: 10px" href="#" id="navbarDropdownMenuLink1"
@@ -72,9 +70,10 @@
           </div>
           <span class="vl"></span>
           <a class="nav-link nav-user-img" data-toggle="modal" data-target="#login-modal" data-abc="true"><button
-              class="btn btn-warning login" routerLink="/admin">
+              class="btn btn-danger loginAdm" routerLink="/admin">
               Admin
             </button></a>
+          <button class="btn btn-warning" routerLink="/login">Login</button>
         </div>
       </div>
     </div>
@@ -82,9 +81,9 @@
 </section>
 <nav class="navbar navbar-expand-md navbar-main border-bottom" role="navigation">
   <div class="container-fluid">
-    <form class="d-md-none my-2">
+    <form class="my-2">
       <div class="input-group">
-        <input type="search" name="search" class="form-control" placeholder="Search" required="" />
+        <input type="search" name="search" class="form-control" placeholder="Buscar..." required=""  style="margin-right: 5px;"/>
         <div class="input-group-append">
           <button type="submit" class="btn btn-secondary">
             <i class="fa fa-search"></i>
@@ -92,14 +91,10 @@
         </div>
       </div>
     </form>
-    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#dropdown6"
-      aria-expanded="false">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="navbar-collapse collapse" id="dropdown6">
+    <div id="dropdown6">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a class="nav-link" href="" data-abc="true">Refurbished Mobile</a>
+          <a class="nav-link" href="" data-abc="true">Categorias</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="" data-abc="true">Accessories & Peripheral</a>
@@ -109,9 +104,6 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="" data-abc="true">Support</a>
-        </li>
-        <li>
-          <button class="btn btn-warning" routerLink="/login">Login</button>
         </li>
       </ul>
     </div>

@@ -7,9 +7,14 @@ import { HeaderComponent } from './componentes/header/header.component';
 import { HomeComponent } from './componentes/home/home.component';
 import { LoginComponent } from './componentes/login/login.component';
 import { NavbarComponent } from './componentes/navbar/navbar.component';
-import { DashboardAdmComponent } from './componentes/dashboard-adm/dashboard-adm.component';
-import { CatalogoComponent } from './componentes/catalogo/catalogo.component';
 import { Logo3dComponent } from './componentes/logo3d/logo3d.component';
+import { CondicionAdmDirective } from './directivas/condicion-adm.directive';
+import { CatalogoAdmComponent } from './componentes/dashboard-adm/catalogo-adm/catalogo-adm.component';
+import { ComprasAdmComponent } from './componentes/dashboard-adm/compras-adm/compras-adm.component';
+import { VentasAdmComponent } from './componentes/dashboard-adm/ventas-adm/ventas-adm.component';
+import { SecDestacadosComponent } from './componentes/catalogo/sec-destacados/sec-destacados.component';
+import { DashboardAdmComponent } from './componentes/dashboard-adm/a-home-adm/dashboard-adm.component';
+import { CatalogoComponent } from './componentes/catalogo/sec-a-main/catalogo.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +25,12 @@ import { Logo3dComponent } from './componentes/logo3d/logo3d.component';
     NavbarComponent,
     DashboardAdmComponent,
     CatalogoComponent,
-    Logo3dComponent
+    Logo3dComponent,
+    CondicionAdmDirective,
+    CatalogoAdmComponent,
+    ComprasAdmComponent,
+    VentasAdmComponent,
+    SecDestacadosComponent
   ],
   imports: [
     BrowserModule,
