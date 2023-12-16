@@ -10,11 +10,12 @@ import { NavbarComponent } from './componentes/navbar/navbar.component';
 import { Logo3dComponent } from './componentes/logo3d/logo3d.component';
 import { CondicionAdmDirective } from './directivas/condicion-adm.directive';
 import { CatalogoAdmComponent } from './componentes/dashboard-adm/catalogo-adm/catalogo-adm.component';
-import { ComprasAdmComponent } from './componentes/dashboard-adm/compras-adm/compras-adm.component';
+import { ComprasAdmComponent } from './componentes/dashboard-adm/compras-adm/compras-home/compras-adm.component';
 import { VentasAdmComponent } from './componentes/dashboard-adm/ventas-adm/ventas-adm.component';
 import { SecDestacadosComponent } from './componentes/catalogo/sec-destacados/sec-destacados.component';
 import { DashboardAdmComponent } from './componentes/dashboard-adm/a-home-adm/dashboard-adm.component';
 import { CatalogoComponent } from './componentes/catalogo/sec-a-main/catalogo.component';
+import { FacturaCompraComponent } from './componentes/dashboard-adm/compras-adm/factura-compra/factura-compra.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { CatalogoComponent } from './componentes/catalogo/sec-a-main/catalogo.co
     CatalogoAdmComponent,
     ComprasAdmComponent,
     VentasAdmComponent,
-    SecDestacadosComponent
+    SecDestacadosComponent,
+    FacturaCompraComponent
   ],
   imports: [
     BrowserModule,
